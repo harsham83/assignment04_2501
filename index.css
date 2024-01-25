@@ -1,0 +1,143 @@
+/* Add your custom styles here */
+.overlay-container {
+    position: relative;
+}
+
+/* Add your custom styles here */
+.addToFavouritesButton {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 10px;
+    background-color: #f0f0f0; 
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+.movieContainer {
+    position: relative;
+    display: flex;
+}
+
+.movieContainer__mainImage {
+    max-width: 100%;
+    height: 88vh;
+}
+
+.movieContainer__textContainer {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    /* background-color: rgba(0, 0, 0, 0.7); Adjust the background color and opacity as needed */
+    padding: 20px;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.movieContainer__title {
+    color: #fff; /* Adjust the text color as needed */
+    margin-bottom: 10px;
+}
+
+.movieContainer__description {
+    color: #fff; /* Adjust the text color as needed */
+    margin-bottom: 10px;
+}
+
+.movieContainer__watchLater {
+    background-color: rgb(196, 37, 37); /* Adjust the button background color as needed */
+    color: #000; /* Adjust the button text color as needed */
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    border-width: 0px;
+}
+
+.movieContainer__watchLater:hover {
+    background-color: #ccc; /* Adjust the button background color on hover as needed */
+}
+
+#searchInput {
+    width: 80%;
+    margin: 9%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#movieDetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#movieDetails img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+#recommendedMovies,
+#favouriteMovies {
+    margin-top: 20px;
+}
+
+.secondContainer{
+    padding: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.netflix-header {
+    background-color: black;
+    text-align: left;
+}
+
+.netflix-header h1 {
+    color: red;
+    margin: 0;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.movie-title{
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .movieContainer__watchLater {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .movieContainer__textContainer {
+        width: 100%;
+    }
+
+    .movieContainer__title{
+        font-size: 14px;
+    }
+
+    .movieContainer__description{
+        font-size: 9px;
+    }
+
+    .movieContainer__textContainer {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        /* background-color: rgba(0, 0, 0, 0.7); Adjust the background color and opacity as needed */
+        padding: 20px;
+        width: 40%;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://kit.fontawesome.com/b9ec959afb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/css/themes/splide-default.min.css">
+  <!-- <script src="./index.js"></script> -->
+</head>
+<body>
+  <div class="netflix-header">
+    <h1>Netflix</h1>
+  </div>
+  <div class="movieContainer">
+    <img src="./images/Posterposter.png" alt="mainPoster" class="movieContainer__mainImage">
+    <div class="movieContainer__textContainer">
+      <h1 class="movieContainer__title">John Wick 3: Parabellum</h1>
+      <p class="movieContainer__description">John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
+      <button class="movieContainer__watchLater">Watch Trailer</button>
+    </div>
+  </div>
+
+  <div class="secondContainer">
+    <div id="searchInputContainer">
+      <input type="text" id="searchInput" placeholder="Search for a movie...">
+    </div>
+
+    <div id="movieDetails" style="display:none;">
+      <img id="moviePoster" alt="Movie Poster">
+      <div>
+        <h2 id="movieTitle"></h2>
+        <p id="movieGenres"></p>
+        <p id="movieReleaseDate"></p>
+        <p id="movieOverview"></p>
+      </div>
+    </div>
+
+    <h1>Recommended Movies</h1>
+    <div id="recommendedMovies" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- Slides will be dynamically added here -->
+        </ul>
+      </div>
+    </div>
+
+    <h1>Favourite List</h1>
+    <div id="favouriteMovies" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- Slides will be dynamically added here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
